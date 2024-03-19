@@ -1,0 +1,16 @@
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Create a new Pet
+        div
+            form(action="/create-pets" method="post")
+                label(for="pet_name") Pet name
+                input(type="text" name="pet_name")
+                label(for="pet_type") Pet age
+                input(type="text" name="age")
+                button(type="submit") Add New Pet
+        a(href="/list-pets") Go To Pets List 

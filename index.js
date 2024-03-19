@@ -36,7 +36,18 @@ app.get('/list-pets', async (req, res) => {
         console.error(error);
     }
 });
+        
+// TODO: ROUTE 2 - Create a new app.get route for the form to create or update new custom object data. Send this data along in the next route.
 
+// * Code for Route 2 goes here
+
+app.get('/create-pets', (req, res) => {
+    try {
+        res.render('create-pet', { title:'Create Pet | Integrating With HubSpot I Practicum' })
+    } catch (error) {
+        console.log(error);
+    }
+});
 
 /** 
 * * This is sample code to give you a reference for how you should structure your calls. 
